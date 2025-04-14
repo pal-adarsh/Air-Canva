@@ -3,40 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIR CANVAS</title>
+    <title>Air Canvas - Draw with Your Fingers</title>
     <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <div class="app-container">
-        <header>
-            <h1>AIR CANVAS</h1>
-            <div class="status">Connected</div>
+        <header class="animate__animated animate__fadeInDown">
+            <h1><span class="gradient-text">Air Canvas</span></h1>
+            <div class="status">
+                <span class="status-indicator"></span>
+                <span>Connected</span>
+            </div>
         </header>
         
         <main>
-            <div class="video-container">
+            <div class="video-container animate__animated animate__fadeIn">
                 <img src="/video_feed" id="video">
             </div>
             
-            <div class="instructions">
-                <h3>How to Draw:</h3>
-                <ol>
-                    <li>Show your hand to the camera</li>
-                    <li>Pinch thumb and index finger to start drawing</li>
-                    <li>Move your hand while pinched to draw</li>
-                    <li>Release pinch to stop drawing</li>
-                </ol>
+            <div class="instructions-container animate__animated animate__fadeInUp">
+                <div class="instructions-header">
+                    <h2>How to Use</h2>
+                    <div class="toggle-instructions">−</div>
+                </div>
+                <div class="instructions-content">
+                    <div class="instruction-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Show Your Hand</h3>
+                            <p>Position your hand in front of the camera</p>
+                        </div>
+                    </div>
+                    <div class="instruction-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Pinch to Draw</h3>
+                            <p>Bring thumb and index finger together to start drawing</p>
+                            <div>
+
+                            </div>
+                            <video src="/static/images/Pinch-gesture.mp4" "></video>
+                        </div>
+                    </div>
+                    <div class="instruction-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Move to Create</h3>
+                            <p>Move your hand while pinched to draw on the canvas</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         
-        <footer>
+        <footer class="animate__animated animate__fadeInUp">
             <div class="controls">
                 <div class="color-selector">
-                    <button class="color-btn black active" data-color="black"></button>
-                    <button class="color-btn blue" data-color="blue"></button>
-                    <button class="color-btn green" data-color="green"></button>
-                    <button class="color-btn red" data-color="red"></button>
-                    <button class="color-btn yellow" data-color="yellow"></button>
+                    <button class="color-btn black active" data-color="black" title="Black"></button>
+                    <button class="color-btn blue" data-color="blue" title="Blue"></button>
+                    <button class="color-btn green" data-color="green" title="Green"></button>
+                    <button class="color-btn red" data-color="red" title="Red"></button>
+                    <button class="color-btn yellow" data-color="yellow" title="Yellow"></button>
                 </div>
                 
                 <div class="brush-controls">
@@ -46,8 +75,12 @@
                 </div>
                 
                 <div class="action-buttons">
-                    <button id="clear-btn">Clear Canvas</button>
-                    <a href="/save_image" download="drawing.png" id="save-btn">Save as Image</a>
+                    <button id="clear-btn" class="btn-hover-effect">
+                        <span>Clear Canvas</span>
+                    </button>
+                    <a href="/save_image" download="drawing.png" id="save-btn" class="btn-hover-effect">
+                        <span>Save as Image</span>
+                    </a>
                 </div>
             </div>
         </footer>
