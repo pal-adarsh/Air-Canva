@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR CANVAS</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>AIR CANVAS</h1>
+            <div class="status">Connected</div>
+        </header>
+        
+        <main>
+            <div class="video-container">
+                <img src="/video_feed" id="video">
+            </div>
+            
+            <div class="instructions">
+                <h3>How to Draw:</h3>
+                <ol>
+                    <li>Show your hand to the camera</li>
+                    <li>Pinch thumb and index finger to start drawing</li>
+                    <li>Move your hand while pinched to draw</li>
+                    <li>Release pinch to stop drawing</li>
+                </ol>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="controls">
+                <div class="color-selector">
+                    <button class="color-btn black active" data-color="black"></button>
+                    <button class="color-btn blue" data-color="blue"></button>
+                    <button class="color-btn green" data-color="green"></button>
+                    <button class="color-btn red" data-color="red"></button>
+                    <button class="color-btn yellow" data-color="yellow"></button>
+                </div>
+                
+                <div class="brush-controls">
+                    <label>Brush Size:</label>
+                    <input type="range" min="1" max="20" value="8" class="brush-slider" id="brush-slider">
+                    <span id="brush-size">8</span>
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="clear-btn">Clear Canvas</button>
+                    <a href="/save_image" download="drawing.png" id="save-btn">Save as Image</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

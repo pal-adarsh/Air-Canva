@@ -1,0 +1,187 @@
+/* (Keep the same CSS as previous implementation) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 900px;
+    height: 90vh;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    padding: 15px 20px;
+    background: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.status {
+    font-size: 0.9rem;
+    color: #ecf0f1;
+}
+
+main {
+    flex: 1;
+    display: flex;
+}
+
+.video-container {
+    flex: 2;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#video {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.instructions {
+    flex: 1;
+    padding: 20px;
+    background: #f8f9fa;
+    border-left: 1px solid #e0e0e0;
+}
+
+.instructions h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.instructions ol {
+    padding-left: 20px;
+    color: #34495e;
+    line-height: 1.6;
+}
+
+.instructions li {
+    margin-bottom: 8px;
+}
+
+footer {
+    padding: 15px;
+    background: #ecf0f1;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.color-selector {
+    display: flex;
+    gap: 8px;
+}
+
+.color-btn {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.color-btn:hover {
+    transform: scale(1.1);
+}
+
+.color-btn.active {
+    border-color: #2c3e50;
+    transform: scale(1.1);
+}
+
+.black { background-color: #000; }
+.blue { background-color: #3498db; }
+.green { background-color: #2ecc71; }
+.red { background-color: #e74c3c; }
+.yellow { background-color: #f1c40f; }
+
+.brush-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+}
+
+.brush-controls label {
+    font-size: 0.9rem;
+    color: #34495e;
+}
+
+.brush-slider {
+    width: 80px;
+}
+
+#brush-size {
+    width: 20px;
+    text-align: center;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button, #save-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #3498db;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, #save-btn:hover {
+    background: #2980b9;
+}
+
+#clear-btn {
+    background: #e74c3c;
+}
+
+#clear-btn:hover {
+    background: #c0392b;
+}
+
+#save-btn {
+    background: #2ecc71;
+}
+
+#save-btn:hover {
+    background: #27ae60;
+}
