@@ -1,21 +1,37 @@
-# Air Slate - Hand Gesture Recognition for Air Drawing
-This basic project demonstrates a web-based hand gesture recognition system for air drawing, called Air Slate. The system allows users to write or draw in the air using their hand movements, which are tracked by a webcam. The following functionalities are included:
+# Air Canvas - Draw with Your Fingers ✋🎨
 
-1. Hand Tracking: The system uses computer vision techniques to detect the hand and track the movement of the index finger. Red dots indicate joint positions, and the green dot represents the tip of the index finger, which is used to draw on the virtual canvas.
-2. Air Drawing: The right side of the screen is a digital canvas where the user’s hand movement (tracked by the index finger) is translated into blue lines, simulating writing or drawing.
-3. The image shows the writing of "HI" using hand gestures.
-4. Canvas Controls: Users can clear the canvas or save their drawings as a PDF using the provided buttons below the canvas.
-Features:
-a. Clear Canvas: Erases all drawings on the canvas.
-b. Save as PDF: Saves the current drawing as a PDF file.
-c. Real-time Hand Gesture Tracking: The system is connected to a server for real-time hand tracking.
-d. This project demonstrates how computer vision can be combined with interactive features to provide intuitive, gesture-based drawing experiences.
+A web application that lets you draw in the air using hand gestures, powered by Python, Flask, and MediaPipe.
 
-# How to use this repository
-1. python -m venv venv
-2. activate virtual environment using this command .\venv\Scripts\activate
-3. pip install fastapi uvicorn opencv-python mediapipe numpy pillow
-4. python main.py
-#Note: I used python version 3.11.1
+![Air Canvas Demo](demo.gif)
 
-now run your html file
+## Features ✨
+
+- **Finger Tracking**: Uses MediaPipe for accurate hand landmark detection
+- **Pinch-to-Draw**: Natural drawing interaction
+- **Color Selection**: Choose from multiple colors
+- **Brush Size Control**: Adjustable brush thickness
+- **Save Drawings**: Export your artwork as PNG
+- **Modern UI**: Sleek design with animations
+- **Responsive**: Works on desktop and mobile
+
+## How It Works 🛠️
+
+1. Show your hand to the camera
+2. Pinch thumb and index finger to start drawing
+3. Move your hand while pinched to create artwork
+4. Release pinch to stop drawing
+5. Use the controls to change colors, brush size, or save your creation
+
+## Technologies Used 💻
+
+- **Backend**: Python, Flask
+- **Computer Vision**: OpenCV, MediaPipe
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Animations**: Animate.css
+
+## Installation ⚙️
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/air-canvas.git
+   cd air-canvas
