@@ -3,10 +3,6 @@
 An interactive application that lets you draw in the air using hand gestures captured by your webcam. Built with Python, OpenCV, MediaPipe, and Flask.
 
 
-![demo](https://github.com/user-attachments/assets/18801c38-a8d8-4166-b3b4-151304d41dc9)
-
-
-
 ## Features
 - 🖐️ Real-time hand tracking
 - ✏️ Draw by pinching thumb and index finger
@@ -51,3 +47,6 @@ python app.py
 - Open `http://localhost:5000` in your browser.  
 
 ---
+
+### Demo 
+![demo](https://github.com/user-attachments/assets/18801c38-a8d8-4166-b3b4-151304d41dc9)
