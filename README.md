@@ -2,7 +2,8 @@
 
 An interactive application that lets you draw in the air using hand gestures captured by your webcam. Built with Python, OpenCV, MediaPipe, and Flask.
 
-![Air Canvas Demo](demo.jpeg) <!-- Add a demo gif if available -->
+![Air Canvas Demo](images/demo.jpeg)
+
 
 ## Features
 - 🖐️ Real-time hand tracking
@@ -33,6 +34,7 @@ An interactive application that lets you draw in the air using hand gestures cap
 ```bash
 git clone https://github.com/pal-adarsh/Air-Canva.git
 cd air-canvas
+```
 
 
 ### **2. Install Dependencies**
