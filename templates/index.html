@@ -87,5 +87,24 @@
     </div>
 
     <script src="/static/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+<script>
+    const socket = io();
+    const videoElement = document.getElementById('video');
+    
+    socket.on('video_frame', (data) => {
+        videoElement.src = `data:image/jpeg;base64,${data.frame}`;
+    });
+    
+    // Update all fetch calls to use socket.emit instead
+    colorButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const color = this.dataset.color;
+            socket.emit('change_color', color);
+        });
+    });
+    
+    // Similarly update other controls...
+</script>
 </body>
 </html>

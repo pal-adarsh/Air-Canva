@@ -1,18 +1,16 @@
-# Air Canvas - Draw with Your Fingers ✋🎨
+# Air Canvas - Draw with Your Fingers ✨
 
-A web application that lets you draw in the air using hand gestures, powered by Python, Flask, and MediaPipe.
+An interactive application that lets you draw in the air using hand gestures captured by your webcam. Built with Python, OpenCV, MediaPipe, and Flask.
 
-![Air Canvas Demo](demo.gif)
+![Air Canvas Demo](demo.jpeg) <!-- Add a demo gif if available -->
 
-## Features ✨
-
-- **Finger Tracking**: Uses MediaPipe for accurate hand landmark detection
-- **Pinch-to-Draw**: Natural drawing interaction
-- **Color Selection**: Choose from multiple colors
-- **Brush Size Control**: Adjustable brush thickness
-- **Save Drawings**: Export your artwork as PNG
-- **Modern UI**: Sleek design with animations
-- **Responsive**: Works on desktop and mobile
+## Features
+- 🖐️ Real-time hand tracking
+- ✏️ Draw by pinching thumb and index finger
+- 🎨 Multiple color options
+- 📏 Adjustable brush size
+- 🧹 Clear canvas with one click
+- 💾 Save your artwork as PNG
 
 ## How It Works 🛠️
 
@@ -29,9 +27,23 @@ A web application that lets you draw in the air using hand gestures, powered by 
 - **Frontend**: HTML5, CSS3, JavaScript
 - **Animations**: Animate.css
 
-## Installation ⚙️
+## Setup & Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/pal-adarsh/Air-Canva.git
-   cd air-canvas
+### 1. Clone the Repository
+```bash
+git clone https://github.com/pal-adarsh/Air-Canva.git
+cd air-canvas
+
+
+### **2. Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+### **3. Run the Application**
+```bash
+python app.py
+```
+- Open `http://localhost:5000` in your browser.  
+
+---
