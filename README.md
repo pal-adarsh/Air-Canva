@@ -26,7 +26,7 @@ An interactive application that lets you draw in the air using hand gestures cap
 - **Frontend**: HTML5, CSS3, JavaScript
 - **Animations**: Animate.css
 
-## Setup & Installation 
+## Setup & Installation 🪜
 
 ### 1. Clone the Repository
 ```bash
