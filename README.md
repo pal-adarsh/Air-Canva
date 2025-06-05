@@ -1,4 +1,4 @@
-# Air Canvas - Draw with Your Fingers ✨
+#✨ Air Canvas - Draw with Your Fingers ✨
 
 An interactive application that lets you draw in the air using hand gestures captured by your webcam. Built with Python, OpenCV, MediaPipe, and Flask.
 
